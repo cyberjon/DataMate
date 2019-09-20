@@ -109,6 +109,7 @@ def profileScrape(soup):
     ##########################
 
     about_me = soup.find(id="description").text.replace("\n", "")
+    
     about_me_split = about_me.split(" ")
     #about_me_split
 
@@ -211,7 +212,9 @@ def main():
         print(f"profile {profile_num + 1} of {count} scraped")
         profile_num += 1
     
-    print(datamate_profiles)
+    f = open("pof_output.txt","w")
+    f.write(str(datamate_profiles))
+    f.close()
     return datamate_profiles
 
 
