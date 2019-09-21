@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body class="w3-black" style="max-width:1200px">
+
+    <header class="search-head w3-container w3-xlarge">
+
+        <p class="w3-left w3-top"> Dat-A-Mate™ </p>
+
+        <h1 class="top_stuff w3-top">
+            <div class="w3-dropdown-hover w3-black w3-right">
+                <a href="about.html"><i class="fa fa-question w3-xlarge w3-black">
+                <span class="w3-dropdown-content w3-black w3-small">ABOUT</span>
+                </i></a>
+
+                <a href="../landing.html"><i class="fa fa-heart w3-large w3-black">
+                <span class="w3-dropdown-content w3-black w3-small">HOME</span>
+                </i></a>
+            </div>
+
+            <div class="w3-content w3-section" style="max-width:500px">
+                <img class="mySlides w3-animate-top" src="Images/contemplation.jpg" style="width:100%">
+                <img class="mySlides w3-animate-bottom" src="Images/thoughtful.jpg" style="width:100%">
+                <img class="mySlides w3-animate-top" src="Images/kitty-551554_960_720.jpg" style="width:100%">
+                <img class="mySlides w3-animate-bottom" src="Images/kitty-551554_960_720.jpg" style="width:100%">
+            </div>
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {
+                        myIndex = 1
+                    }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 2500);
+                }
+            </script>
+
+
+</body>
+
+</html>
