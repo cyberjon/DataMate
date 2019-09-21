@@ -1,0 +1,7 @@
+adj,age: <20,age: 20-29,age: 30-39,age: 40-49,age: 50-59,age: 60-69,age: 70-79,age: 80-89,age: 90+,gender: female,gender: male,ethnicity: asian,ethnicity: black,ethnicity: caucasian,ethnicity: hispanic,ethnicity: indian,ethnicity: middle eastern,ethnicity: mixed race,ethnicity: native american,ethnicity: other ethnicity,hair: bald,hair: black,hair: blond(e),hair: brown,hair: grey,hair: mixed color,hair: red,hair: (blank),total
+curvy,0,0,0,1,0,0,0,0,0,3,2,120,60,15,30,150,600,40,300,200,120,120,40,15,30,60,200,300,6
+happy,9,13,13,18,13,9,9,4,0,46,43,1800,900,225,450,2250,9000,600,4500,3000,1800,1800,600,225,450,900,3000,4500,90
+sexy,1,1,1,2,1,1,1,0,0,6,5,240,120,30,60,300,1200,80,600,400,240,240,80,30,60,120,400,600,12
+athletic,2,3,3,4,3,2,2,1,0,12,11,480,240,60,120,600,2400,160,1200,800,480,480,160,60,120,240,800,1200,24
+confident,3,4,4,6,4,3,3,1,0,16,14,620,310,77,155,775,3100,206,1550,1033,620,620,206,77,155,310,1033,1550,31
+honest,14,22,22,29,22,14,14,7,0,77,71,2980,1490,372,745,3725,14900,993,7450,4966,2980,2980,993,372,745,1490,4966,7450,149
