@@ -45,7 +45,7 @@ h6 {
     padding: 20px;
     margin: 0;
     background: black;
-    background-image: url("../images/xeno1.png");
+    background-image: url("#");
     background-attachment: fixed;
     background-position: bottom center;
     background-size: cover;
