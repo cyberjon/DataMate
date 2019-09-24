@@ -33,7 +33,7 @@ btnFilter.on("click", function() {
     let inpPets = d3.select("#pets");
     let inpLanguage = d3.select("#language");
     debug("captured inputboxes");
-
+    debugger;
     // Get the value property of the input element
     let strUsername = inpUsername.property("value").toLowerCase();
     let strCity = inpCity.property("value").toLowerCase();
@@ -54,16 +54,18 @@ btnFilter.on("click", function() {
 
     if (strUsername !== "") { arrMatch = arrMatch.filter(itm => itm.username == strUsername); }
     if (strCity !== "") { arrMatch = arrMatch.filter(itm => itm.city == strCity); }
-    if (strMaritial !== "") { data = arrMatch.filter(itm => itm.Marital == strMaritial); }
-    if (strDrugs !== "") { arrMatch = arrMatch.filter(itm => itm.drugs == strCountry); }
-    if (strHair !== "") { arrMatch = arrMatch.filter(itm => itm.hair == strShape); }
-    if (strEye !== "") { arrMatch = arrMatch.filter(itm => itm.eye == strEye); }
-    if (strCar !== "") { arrMatch = arrMatch.filter(itm => itm.car == strCar); }
-    if (strChildren !== "") { arrMatch = arrMatch.filter(itm => itm.children == strChildren); }
-    if (strRelationship !== "") { arrMatch = arrMatch.filter(itm => itm.realtionship == strRelationship); }
-    if (strAmbitious !== "") { arrMatch = arrMatch.filter(itm => itm.ambitious == strAmbitious); }
-    if (strPets !== "") { arrMatch = arrMatch.filter(itm => itm.pets == strPets); }
-    if (strLanguage !== "") { arrMatch = arrMatch.filter(itm => itm.language == strLanguage); }
+    if (strMaritial !== "") { arrMatch = arrMatch.filter(itm => itm.Marital == strMaritial); }
+    if (strDrugs !== "") { arrMatch = arrMatch.filter(itm => itm.Drugs == strDrugs); }
+
+    if (strHair !== "") { arrMatch = arrMatch.filter(itm => itm.Hair == strHair); }
+
+    if (strEye !== "") { arrMatch = arrMatch.filter(itm => itm.Eye == strEye); }
+    if (strCar !== "") { arrMatch = arrMatch.filter(itm => itm.Car == strCar); }
+    if (strChildren !== "") { arrMatch = arrMatch.filter(itm => itm.Children == strChildren); }
+    if (strRelationship !== "") { arrMatch = arrMatch.filter(itm => itm.Realtionship == strRelationship); }
+    if (strAmbitious !== "") { arrMatch = arrMatch.filter(itm => itm.Ambitious == strAmbitious); }
+    if (strPets !== "") { arrMatch = arrMatch.filter(itm => itm.Pets == strPets); }
+    if (strLanguage !== "") { arrMatch = arrMatch.filter(itm => itm.Language == strLanguage); }
     debug("created filtered array", arrMatch);
     let tbodCurr = document.getElementById("date-table-body");
     let tbodBlank = document.createElement("tbody");
