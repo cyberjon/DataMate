@@ -8,13 +8,24 @@ body {
     height: 100%;
     padding: 0;
     margin: 0;
+    background-color: black;
+    color: grey;
+}
+
+table {
+    background-color: black;
+    color: gray;
+}
+
+.navbar {
+    background-color: black;
 }
 
 
 /* added button styling */
 
 .button {
-    background-color: #4CAF50;
+    background-color: black;
     border: none;
     color: white;
     padding: 20px;
@@ -152,7 +163,7 @@ select {
     padding: 20px;
     margin: 0;
     background: black;
-    background-image: url("../images/xeno1.png");
+    background-image: url("#");
     background-attachment: fixed;
     background-position: bottom center;
     background-size: cover;
