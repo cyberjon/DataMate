@@ -1,3 +1,11 @@
 .mySlides {
     display: none;
 }
+
+.mySlides {
+    margin-top: 25px;
+}
+
+script {
+    margin-top: 200px
+}

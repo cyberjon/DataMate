@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Dat-a-Mate: Select Adjectives</title>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+	<div class="container">
+	<div id="dropdown1">
+		<select id="selDataset" onchange="adjectiveChange(this.value)">
+			<option value="curvy">curvy</option>
+			<option value="happy">happy</option>
+			<option value="sexy">sexy</option>
+			<option value="athletic">athletic</option>
+			<option value="confident">confident</option>
+			<option value="honest">honest</option>
+		</select>
+		</div>
+	<div id="plot">
+	</div>
+	<div id="dropdown2">
+			<select id="selDataset" onchange="traitChange(this.value)">
+				<option value="ethnicity">ethnicity</option>
+				<option value="age">age</option>
+				<option value="gender">gender</option>
+				<option value="hair">hair</option>
+			
+			</select>
+			</div>
+	</div>
+
+
+=======
+	<!--<select id="selAdj" onchange="optionChanged(this.value)"></select>
+	<div id="plot"></div>-->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script src="Summ_adj.json"></script>
+	<script src="adj.js"></script>
+</body>
+</html>
