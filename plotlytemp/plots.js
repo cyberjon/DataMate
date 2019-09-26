@@ -5,6 +5,7 @@ let arrDimEth = ["ethnicityasian", "ethnicityblack", "ethnicitycaucasian", "ethn
 let arrDimHair = ["hairbald", "hairblack", "hairblond", "hairbrown", "hairgrey", "hairmixedcolor", "hairred", "hairblank"];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 //let arrX = arrDimEth;
 //default plot
 let arrdefaultX = arrDimEth;
@@ -40,6 +41,8 @@ function defineXaxis(trait) {
   } else {
     arrX = arrDimEth;
 =======
+=======
+>>>>>>> f83a712d482b11d225db5a93591c31d87e3ff558
 // set up arrays of object labels
 let arrLblAge = ["<20", "20-29", "30-39", "40-49", "50-59", "60-69", "70-79", "80-89", "90+"];
 let arrLblEth = ["Asian", "Black", "Caucasian", "Hispanic", "Indian", 
@@ -47,23 +50,41 @@ let arrLblEth = ["Asian", "Black", "Caucasian", "Hispanic", "Indian",
 let arrLblHair = ["Bald", "Black", "Blond(e)", "Brown", "Grey", "Mixed Color", "Red", "(Blank)"];
 
 // assign chosen variables
+<<<<<<< HEAD
 let strChosenAdj = "sexy";
 let arrX = arrDimAge;
+=======
+// let strChosenAdj = "honest";
+let arrX = arrDimEth;
+>>>>>>> f83a712d482b11d225db5a93591c31d87e3ff558
 
 // populate arrays to be used by graph
 let arrY = [];
 arrData.forEach(objRow=>{
+<<<<<<< HEAD
 	if(objRow.adj == strChosenAdj){
+=======
+	if(objRow.adj == getData(strChosenAdj)){
+>>>>>>> f83a712d482b11d225db5a93591c31d87e3ff558
 		arrX.forEach(str=>arrY.push(objRow[str]));
 	}
 });
 
+<<<<<<< HEAD
+=======
+// set label
+>>>>>>> f83a712d482b11d225db5a93591c31d87e3ff558
 let arrLbl = [];
 if(arrX == arrDimAge){arrLbl = arrLblAge;}
 if(arrX == arrDimEth){arrLbl = arrLblEth;}
 if(arrX == arrDimHair){arrLbl = arrLblHair;}
 console.log('arrLbl: ' + arrLbl);
 
+<<<<<<< HEAD
+=======
+  
+
+>>>>>>> f83a712d482b11d225db5a93591c31d87e3ff558
 // debugs
 console.log('arrChosenDim: ' + arrX);
 console.log('arrY: ' + arrY);
@@ -85,6 +106,7 @@ let layout = {
     r: 100,
     t: 100,
     b: 100
+<<<<<<< HEAD
 >>>>>>> 2ae3a271e9feae7e0f1b1efca88ea20921531d1c
   }
 
@@ -207,4 +229,16 @@ function buildPlots(arrTraits, arrAdjectives) {
     }
 
   
+=======
+  }
+};
+
+// Render the plot to the div tag with id "plot"
+Plotly.newPlot("plot", [objSettings], layout);
+
+function getData(strChosenAdj) {
+  console.log(strChosenAdj);
+  return strChosenAdj;
+}
+>>>>>>> f83a712d482b11d225db5a93591c31d87e3ff558
 
